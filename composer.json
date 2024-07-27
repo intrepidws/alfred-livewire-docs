@@ -1,12 +1,12 @@
 {
-    "name": "intrepidws/alfred-filament-docs",
-    "description": "An ultra-fast Filament docs search workflow for Alfred 4.",
-    "version": "2.0.0",
-    "keywords": ["alfred", "alfred-workflow", "filament", "filament admin", "laravel", "algolia"],
+    "name": "intrepidws/alfred-livewire-docs",
+    "description": "An ultra-fast Livewire docs search workflow for Alfred 4.",
+    "version": "1.0.0",
+    "keywords": ["alfred", "alfred-workflow", "livewire", "laravel livewire", "laravel", "algolia"],
     "homepage": "https://www.intrepidws.com/",
     "support": {
-        "source": "https://github.com/intrepidws/alfred-filament-docs",
-        "issues": "https://github.com/intrepidws/alfred-filament-docs/issues"
+        "source": "https://github.com/intrepidws/alfred-livewire-docs",
+        "issues": "https://github.com/intrepidws/alfred-livewire-docs/issues"
     },
     "license": "MIT",
     "require": {

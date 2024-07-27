@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.craiganderson.filament-docs</string>
+	<string>com.craiganderson.livewire-docs</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
@@ -64,11 +64,11 @@
 	<key>createdby</key>
 	<string>Craig Anderson</string>
 	<key>description</key>
-	<string>An ultra-fast Filament docs search workflow</string>
+	<string>An ultra-fast Livewire docs search workflow</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Filament Docs</string>
+	<string>Livewire Docs</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -87,7 +87,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>fm</string>
+				<string>lw</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -100,20 +100,20 @@
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
 				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php filament.php "{query}" v3
+    /opt/homebrew/bin/php livewire.php "{query}" v3
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php filament.php "{query}" v3
+    /usr/local/bin/php livewire.php "{query}" v3
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php filament.php "{query}" v3
+    /usr/bin/php livewire.php "{query}" v3
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Search the Filament Docs...</string>
+				<string>Search the Livewire Docs...</string>
 				<key>title</key>
-				<string>Filament Docs</string>
+				<string>Livewire Docs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -163,7 +163,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>fm3</string>
+				<string>lw3</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -176,20 +176,20 @@ fi</string>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
 				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php filament.php "{query}" v3
+    /opt/homebrew/bin/php livewire.php "{query}" v3
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php filament.php "{query}" v3
+    /usr/local/bin/php livewire.php "{query}" v3
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php filament.php "{query}" v3
+    /usr/bin/php livewire.php "{query}" v3
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Search the Filament 3.x Docs...</string>
+				<string>Search the Livewire 3.x Docs...</string>
 				<key>title</key>
-				<string>Filament Docs</string>
+				<string>Livewire Docs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -218,7 +218,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>fm2</string>
+				<string>lw2</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -231,20 +231,20 @@ fi</string>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
 				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php filament.php "{query}" v2
+    /opt/homebrew/bin/php livewire.php "{query}" v2
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php filament.php "{query}" v2
+    /usr/local/bin/php livewire.php "{query}" v2
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php filament.php "{query}" v2
+    /usr/bin/php livewire.php "{query}" v2
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Search the Filament 2.x Docs...</string>
+				<string>Search the Livewire 2.x Docs...</string>
 				<key>title</key>
-				<string>Filament 2.x Docs</string>
+				<string>Livewire 2.x Docs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -273,7 +273,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
-				<string>fm1</string>
+				<string>lw1</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -286,20 +286,20 @@ fi</string>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
 				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php filament.php "{query}" v1
+    /opt/homebrew/bin/php livewire.php "{query}" v1
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php filament.php "{query}" v1
+    /usr/local/bin/php livewire.php "{query}" v1
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php filament.php "{query}" v1
+    /usr/bin/php livewire.php "{query}" v1
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Search the Filament 1.x Docs...</string>
+				<string>Search the Livewire 1.x Docs...</string>
 				<key>title</key>
-				<string>Filament 1.x Docs</string>
+				<string>Livewire 1.x Docs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -314,26 +314,26 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>An ultra-fast Filament docs search workflow for Alfred.
+	<string>An ultra-fast Livewire docs search workflow for Alfred.
 
 ## Usage
 
-To search the [3.x docs](https://filamentphp.com/docs/3.x/panels/installation), just type `fm` (or `fm3`) followed by your search query.
+To search the [3.x docs](https://livewire.laravel.com/docs/quickstart), just type `lw` (or `lw3`) followed by your search query.
 
 ```
-fm &lt;query&gt;
+lw &lt;query&gt;
 ```
 
-To search the [2.x docs](https://filamentphp.com/docs/2.x/admin/installation), just type `fm2` followed by your search query.
+To search the [2.x docs](https://laravel-livewire.com/docs/2.x/quickstart), just type `lw2` followed by your search query.
 
 ```
-fm2 &lt;query&gt;
+lw2 &lt;query&gt;
 ```
 
-To search the [1.x docs](https://filamentphp.com/docs/1.x/admin/getting-started), just type `fm1` followed by your search query.
+To search the [1.x docs](https://laravel-livewire.com/docs/1.x/quickstart), just type `lw1` followed by your search query.
 
 ```
-fm1 &lt;query&gt;
+lw1 &lt;query&gt;
 ```
 
 Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open it in your web browser.</string>
@@ -380,8 +380,8 @@ Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open i
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.0.0</string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/intrepidws/alfred-filament-docs</string>
+	<string>https://github.com/intrepidws/alfred-livewire-docs</string>
 </dict>
 </plist>

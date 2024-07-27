@@ -12,19 +12,34 @@ $query = $argv[1];
 $version = isset($argv[2]) ? $argv[2] : 'v3';
 
 $workflow = new Workflow;
-$algolia = Algolia::create('LMIKXMDI4P', '1e3d12b0b9c3a4db16cd896e83b9efa0');
 
-AlgoliaUserAgent::addCustomUserAgent('Filament Alfred Workflow', '3.0.0');
+if ($version === 'v1') {
+    $application_id = 'BH4D9OD16A';
+    $api_key = 'cec0554d960fa30b4b0b610f372a8636';
+    $index_name = 'livewire-framework';
+} elseif ($version === 'v2') {
+    $application_id = 'BH4D9OD16A';
+    $api_key = 'cec0554d960fa30b4b0b610f372a8636';
+    $index_name = 'livewire-framework';
+} else {
+    $application_id = '418WMK58D6';
+    $api_key = '4c5d415abd4c0c167f4368e679076c09';
+    $index_name = 'livewire-framework-3';
+}
 
-$results = getResults($algolia, 'filamentadmin', $query, $version);
+$algolia = Algolia::create($application_id, $api_key);
+
+AlgoliaUserAgent::addCustomUserAgent('Livewire Alfred Workflow', '1.0.0');
+
+$results = getResults($algolia, $index_name, $query, $version);
 
 if (empty($results)) {
     $workflow->result()
         ->title('No matches')
         ->icon('google.png')
-        ->subtitle('No match found in the docs. Search Google for: "Laravel+Filament+Admin+{$query}"')
-        ->arg('https://www.google.com/search?q=laravel+filament+admin+' . $query)
-        ->quicklookurl('https://www.google.com/search?q=laravel+filament+admin+' . $query)
+        ->subtitle('No match found in the docs. Search Google for: "Laravel+Livewire+{$query}"')
+        ->arg('https://www.google.com/search?q=laravel+livewire+' . $query)
+        ->quicklookurl('https://www.google.com/search?q=laravel+livewire+' . $query)
         ->valid(true);
 
     echo $workflow->output();
