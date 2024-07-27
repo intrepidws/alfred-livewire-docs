@@ -11,7 +11,7 @@ Adapted from [Alfred TailwindCSS Docs](https://github.com/clnt/alfred-tailwindcs
 
 > **macOS Monterey:** PHP is no longer shipped with macOS, before attempting to use this workflow ensure you have installed the php binary via Homebrew.
 
-1. [Download the latest version](https://github.com/intrepidws/alfred-livewire-docs/releases/download/v1.0.0/Livewire.Docs.alfredworkflow)
+1. [Download the latest version](https://github.com/intrepidws/alfred-livewire-docs/releases/download/v1.0.0/Livewire-Docs.alfredworkflow)
 2. Install the workflow by double-clicking the `.alfredworkflow` file
 3. You can add the workflow to a category, then click "Import" to finish importing. You'll now see the workflow listed in the left sidebar of your Workflows preferences pane.
 
