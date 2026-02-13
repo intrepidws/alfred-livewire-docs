@@ -7,6 +7,7 @@ function getResults($algolia, $indexName, $query, $version)
     } elseif ($version === 'v2') {
         $facetFilter = ['version:2.x'];
     } else {
+        // v3 and v4 both use version:3.x in Algolia (4.x docs are indexed under 3.x)
         $facetFilter = ['version:3.x'];
     }
 

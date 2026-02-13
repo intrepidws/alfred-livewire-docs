@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 use Alfred\Workflows\Workflow;
 
 use Algolia\AlgoliaSearch\SearchClient as Algolia;
@@ -9,7 +11,7 @@ require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/functions.php';
 
 $query = $argv[1];
-$version = isset($argv[2]) ? $argv[2] : 'v3';
+$version = isset($argv[2]) ? $argv[2] : 'v4';
 
 $workflow = new Workflow;
 
@@ -22,6 +24,7 @@ if ($version === 'v1') {
     $api_key = 'cec0554d960fa30b4b0b610f372a8636';
     $index_name = 'livewire-framework';
 } else {
+    // v3 and v4 use the same index
     $application_id = '418WMK58D6';
     $api_key = '4c5d415abd4c0c167f4368e679076c09';
     $index_name = 'livewire-framework-3';

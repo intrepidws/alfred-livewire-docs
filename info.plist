@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>L4A93460-4A4F-47E1-871B-7D461A5B7419</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A0BE7549-4E85-86DC-BF89-E30C0D797564</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Craig Anderson</string>
@@ -99,12 +112,14 @@
 				<key>runningsubtext</key>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
-				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php livewire.php "{query}" v3
+				<string>if [ -f "$HOME/Library/Application Support/Herd/bin/php" ]; then
+    "$HOME/Library/Application Support/Herd/bin/php" livewire.php "{query}" v4 2>/dev/null
+elif [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php livewire.php "{query}" v4 2>/dev/null
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php livewire.php "{query}" v3
+    /usr/local/bin/php livewire.php "{query}" v4 2>/dev/null
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php livewire.php "{query}" v3
+    /usr/bin/php livewire.php "{query}" v4 2>/dev/null
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -175,12 +190,14 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
-				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php livewire.php "{query}" v3
+				<string>if [ -f "$HOME/Library/Application Support/Herd/bin/php" ]; then
+    "$HOME/Library/Application Support/Herd/bin/php" livewire.php "{query}" v3 2>/dev/null
+elif [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php livewire.php "{query}" v3 2>/dev/null
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php livewire.php "{query}" v3
+    /usr/local/bin/php livewire.php "{query}" v3 2>/dev/null
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php livewire.php "{query}" v3
+    /usr/bin/php livewire.php "{query}" v3 2>/dev/null
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -189,7 +206,7 @@ fi</string>
 				<key>subtext</key>
 				<string>Search the Livewire 3.x Docs...</string>
 				<key>title</key>
-				<string>Livewire Docs</string>
+				<string>Livewire 3.x Docs</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -230,12 +247,14 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
-				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php livewire.php "{query}" v2
+				<string>if [ -f "$HOME/Library/Application Support/Herd/bin/php" ]; then
+    "$HOME/Library/Application Support/Herd/bin/php" livewire.php "{query}" v2 2>/dev/null
+elif [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php livewire.php "{query}" v2 2>/dev/null
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php livewire.php "{query}" v2
+    /usr/local/bin/php livewire.php "{query}" v2 2>/dev/null
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php livewire.php "{query}" v2
+    /usr/bin/php livewire.php "{query}" v2 2>/dev/null
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -285,12 +304,14 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
-				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php livewire.php "{query}" v1
+				<string>if [ -f "$HOME/Library/Application Support/Herd/bin/php" ]; then
+    "$HOME/Library/Application Support/Herd/bin/php" livewire.php "{query}" v1 2>/dev/null
+elif [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php livewire.php "{query}" v1 2>/dev/null
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php livewire.php "{query}" v1
+    /usr/local/bin/php livewire.php "{query}" v1 2>/dev/null
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php livewire.php "{query}" v1
+    /usr/bin/php livewire.php "{query}" v1 2>/dev/null
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -312,16 +333,79 @@ fi</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>lw4</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching docs for "{query}"...</string>
+				<key>script</key>
+				<string>if [ -f "$HOME/Library/Application Support/Herd/bin/php" ]; then
+    "$HOME/Library/Application Support/Herd/bin/php" livewire.php "{query}" v4 2>/dev/null
+elif [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php livewire.php "{query}" v4 2>/dev/null
+elif [ -f "/usr/local/bin/php" ]; then
+    /usr/local/bin/php livewire.php "{query}" v4 2>/dev/null
+elif [ -f "/usr/bin/php" ]; then
+    /usr/bin/php livewire.php "{query}" v4 2>/dev/null
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search the Livewire 4.x Docs...</string>
+				<key>title</key>
+				<string>Livewire 4.x Docs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>L4A93460-4A4F-47E1-871B-7D461A5B7419</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>An ultra-fast Livewire docs search workflow for Alfred.
 
 ## Usage
 
-To search the [3.x docs](https://livewire.laravel.com/docs/quickstart), just type `lw` (or `lw3`) followed by your search query.
+To search the [4.x docs](https://livewire.laravel.com/docs/quickstart), just type `lw` (or `lw4`) followed by your search query.
 
 ```
 lw &lt;query&gt;
+```
+
+To search the [3.x docs](https://livewire.laravel.com/docs/3.x/quickstart), just type `lw3` followed by your search query.
+
+```
+lw3 &lt;query&gt;
 ```
 
 To search the [2.x docs](https://laravel-livewire.com/docs/2.x/quickstart), just type `lw2` followed by your search query.
@@ -373,6 +457,13 @@ Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open i
 			<real>340</real>
 			<key>ypos</key>
 			<real>40</real>
+		</dict>
+		<key>L4A93460-4A4F-47E1-871B-7D461A5B7419</key>
+		<dict>
+			<key>xpos</key>
+			<real>340</real>
+			<key>ypos</key>
+			<real>500</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
